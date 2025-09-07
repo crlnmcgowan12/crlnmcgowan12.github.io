@@ -9,7 +9,7 @@ body {
 header, main, footer {
     width: 90%;
     margin: auto;
-    padding: 20px;
+  
 }
 
 header {
@@ -21,5 +21,5 @@ header {
 footer {
     text-align: center;
     font-size: 0.8em;
-    padding: 10px;
+   
 }
