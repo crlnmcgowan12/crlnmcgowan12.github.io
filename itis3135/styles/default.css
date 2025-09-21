@@ -1,25 +1,39 @@
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f4f4f4;
-    margin: 0;
-    line-height: 1.6;
+:root {
+  --dark-brown: #512d38;
+  --dusty-rose: #b27092;
+  --light-pink: #f4bfdb;
+  --very-light-pink: #ffe9f3;
+  --light-teal: #87baab;
 }
 
-header, main, footer {
-    width: 90%;
-    margin: auto;
-  
+body {
+  background-color: var(--very-light-pink);
+  color: var(--dark-brown);
+  font-family: sans-serif;
 }
 
 header {
-    background: #555;
-    color: #fff;
-    text-align: center;
+  background-color: var(--dusty-rose);
+  color: var(--very-light-pink);
+  padding: 1rem;
+}
+
+main {
+  background-color: var(--light-pink);
+  padding: 1rem;
+}
+
+a {
+  color: var(--dark-brown);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 footer {
-    text-align: center;
-    font-size: 0.8em;
-   
+  background-color: var(--light-teal);
+  color: var(--dark-brown);
+  padding: 1rem;
 }
