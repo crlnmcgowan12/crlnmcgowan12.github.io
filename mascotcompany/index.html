@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cheerful Monkey - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --dark-green: #0A210F;
+            --medium-green: #14591D;
+            --olive: #99AA38;
+            --light-yellow: #E1E289;
+            --light-blue: #ACD2ED;
+        }
+
+        body {
+            background-color: var(--light-yellow);
+            color: var(--dark-green);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            background-color: var(--olive);
+            color: var(--dark-green);
+            padding: 1.5rem 1rem;
+        }
+        
+        nav a {
+            color: var(--dark-green);
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--light-yellow);
+        }
+
+        .container {
+            max-width: 960px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="shadow-md">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+            <h1 class="text-4xl font-extrabold text-white sm:text-3xl">The Cheerful Monkey</h1>
+            <nav>
+                <ul class="flex space-x-6 text-lg sm:text-base">
+                    <li><a href="index.html" class="hover:underline underline-offset-4">Home</a></li>
+                    <li><a href="about.html" class="hover:underline underline-offset-4">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="text-center mt-3 text-2xl sm:text-lg"><em>Unleash your inner artist.</em></p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-8 flex-grow">
+        <section class="text-center rounded-lg p-8 md:p-12 shadow-lg" style="background-color: var(--light-blue);">
+            <h2 class="text-5xl font-extrabold mb-4 sm:text-4xl">Welcome to Our World!</h2>
+            <p class="text-xl leading-relaxed sm:text-lg">
+                We're so glad you're here. At The Cheerful Monkey, we believe that everyone has an inner artist waiting to be discovered. Our mission is to make creativity accessible and fun with our whimsical, all-in-one craft kits.
+            </p>
+            <p class="text-xl leading-relaxed mt-4 sm:text-lg">
+                Explore our collection of curated projects, from needle-felted animals to macrame plant hangers. Everything you need is right inside the box, so you can start creating as soon as your kit arrives.
+            </p>
+            <a href="about.html" class="mt-6 inline-block py-3 px-8 text-xl font-bold rounded-full transition-transform transform hover:scale-105" style="background-color: var(--medium-green); color: white;">
+                Learn More About Our Story
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center shadow-md">
+        <p>&copy; 2025 The Cheerful Monkey</p>
+    </footer>
+
+</body>
+</html>
