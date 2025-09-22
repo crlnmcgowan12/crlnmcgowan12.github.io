@@ -1,0 +1,35 @@
+:root {
+    --dark-green: #0A210F;
+    --medium-green: #14591D;
+    --olive: #99AA38;
+    --light-yellow: #E1E289;
+    --light-blue: #ACD2ED;
+}
+
+body {
+    background-color: var(--light-yellow);
+    color: var(--dark-green);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: var(--olive);
+    color: var(--dark-green);
+    padding: 1.5rem 1rem;
+}
+
+nav a {
+    color: var(--dark-green);
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--light-yellow);
+}
+
+.container {
+    max-width: 960px;
+}
