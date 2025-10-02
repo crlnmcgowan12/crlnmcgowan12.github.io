@@ -6,42 +6,36 @@
     <link rel="stylesheet" href="styles/default.css"> 
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     
-    <style>
-        header nav a {
-            color: white ; 
+    <!--<style>
+        nav { 
+            background-color: #d8bfd8;
+            padding: 10px 0;
+            text-align: center; 
+        }
+
+        nav a {
+            color: #333 ;
             text-decoration: none;
             font-weight: bold;
             margin: 0 5px; 
         }
-    </style>
+        
+        h1 {
+            margin-bottom: 0;
+        }
+    </style>-->
 </head>
 <body>
-       <header>
-        <h1>ITIS 3135 | Caroline McGowan</h1>
-        
-        <nav>
-            <a href="../index.html">Personal Homepage</a> |
-            <a href="index.html">ITIS 3135 Home</a> |
-            <a href="introduction.html">Introduction</a> |
-            <a href="contract.html">Course Contract</a> |
-   
-<a href="stuff/My-Awful-Page-2025.html">Crappy Website</a> |
-<a href="website_evaluations.html">website evaluation</a> |
-
-            <a href="https://github.com/crlnmcgowan12">GitHub.com</a> |
-            <a href="http://webpages.charlotte.edu/cmcgowa8/">CLT Web</a> |
-            <a href="https://crlnmcgowan12.github.io/">GitHub.io</a> |
-            <a href="http://www.linkedin.com/in/carolinemcgowan">LinkedIn</a>
-            
-        </nav>
-</header>
+    
+    <div data-include="components/header.html"></div>
+    
     <main>
         <h2>ITIS 3135 Home Page</h2>
         <p>This is the home page for my ITIS 3135 course assignments.</p>
         <p>Learning web development, one line of code at a time.</p>
     </main>
-    <footer>
-        <p>Page built by<a href="carolineenterprises.com"> McGowan Co.</a></p>
-    </footer>
+    
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.js"></script> 
 </body>
 </html>
