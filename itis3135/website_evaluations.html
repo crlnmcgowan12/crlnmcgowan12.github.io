@@ -3,21 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <title>Website Evaluations - CS Web Design</title>
-  <link rel="stylesheet" href="styles/default.css">
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
   <meta name="description" content="Evaluation of websites using CRAP principles: Contrast, Repetition, Alignment, Proximity">
-  <style>
-        header nav a {
-            color: white ; 
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 5px; 
-        }
-    </style>
-</head>
-<body>
 
-    <div data-include="components/header.html"></div>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background-color: #fdf6f9;
+      color: #444;
+    }
+
+    header {
+      background-color: #f8cde0;
+      color: #4b3b47;
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 2px solid #f3a9c4;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      font-weight: 600;
+    }
+
+    header nav a {
+      color: #4b3b47;
+      text-decoration: none;
+      font-weight: 500;
+      margin: 0 10px;
+      transition: color 0.3s ease, transform 0.2s ease;
+    }
+
+    header nav a:hover {
+      color: #7a5a72;
+      transform: scale(1.05);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: #fffafb;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(250, 200, 220, 0.4);
+    }
+
+    h2 {
+      color: #7a5a72;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    section {
+      background-color: #fef3f7;
+      border: 1px solid #f3cadb;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 25px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      box-shadow: 0 0 10px rgba(250, 180, 200, 0.3);
+    }
+
+    h3 a {
+      color: #7a5a72;
+      text-decoration: none;
+    }
+
+    h3 a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 25px;
+    }
+
+    footer {
+      background-color: #f8cde0;
+      color: #4b3b47;
+      text-align: center;
+      padding: 15px 0;
+      border-top: 2px solid #f3a9c4;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Website Evaluations</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
   <main>
     <h2>Website Evaluations</h2>
@@ -43,10 +132,10 @@
         <li><strong>Proximity:</strong> Items are overcrowded or spaced inconsistently; related content isn’t always grouped.</li>
       </ul>
     </section>
-
   </main>
 
-     <div data-include="components/footer.html"></div>
-
+  <footer>
+    <p>&copy; 2025 Caroline McGowan — CS Web Design Project</p>
+  </footer>
 </body>
 </html>
