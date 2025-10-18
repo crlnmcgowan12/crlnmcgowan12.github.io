@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sims 4 Hobby</title>
+
+  <!-- ✅ Embedded Stylesheet (required for assignment) -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #e9f6f7;
+      color: #333;
+      margin: 0;
+      text-align: center;
+    }
+
+    header, footer {
+      background-color: #c9e4e7;
+      padding: 20px;
+      border-radius: 0 0 15px 15px;
+    }
+
+    header h1 {
+      color: #4c6a69;
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: #4c6a69;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #7b9d9c;
+      text-decoration: underline;
+    }
+
+    section {
+      display: none;
+      padding: 30px;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      color: #3d5554;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    figure {
+      margin: 20px auto;
+      max-width: 400px;
+    }
+
+    figure img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    figcaption {
+      font-style: italic;
+      font-size: 0.9em;
+      margin-top: 5px;
+      color: #555;
+    }
+
+    footer p {
+      margin: 10px 0;
+    }
+
+    footer a {
+      margin: 0 5px;
+    }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 60%;
+    }
+
+    table, th, td {
+      border: 1px solid #aaa;
+      padding: 8px;
+    }
+
+    table th {
+      background-color: #b6d9db;
+    }
+
+    em {
+      display: block;
+      margin-top: 10px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ✅ HEADER -->
+  <header>
+    <h1>The Sims 4</h1>
+    <nav>
+      <a href="#" onclick="showSection('what')">What</a> 💠
+      <a href="#" onclick="showSection('who')">Who</a> 💠
+      <a href="#" onclick="showSection('when')">When</a> 💠
+      <a href="#" onclick="showSection('where')">Where</a> 💠
+      <a href="#" onclick="showSection('how')">How</a> 💠
+      <a href="#" onclick="showSection('why')">Why</a> 💠
+      <a href="#" onclick="showSection('ai')">AI Prompts</a>
+    </nav>
+  </header>
+
+  <!-- ✅ MAIN CONTENT -->
+  <main>
+    <!-- WHAT Section -->
+    <section id="what" class="active">
+      <h2>What is The Sims 4?</h2>
+      <p>The Sims 4 is a life simulation game where players create and control people called “Sims.” You design their homes, build their relationships, and shape their stories however you want.</p>
+      
+      <table>
+        <tr><th>Expansion Pack</th><th>Theme</th></tr>
+        <tr><td>Cats & Dogs</td><td>Pets and Veterinary Careers</td></tr>
+        <tr><td>Seasons</td><td>Weather, Holidays, and Gardening</td></tr>
+        <tr><td>Eco Lifestyle</td><td>Sustainable Living and Recycling</td></tr>
+      </table>
+
+      <figure>
+        <img src="images/sims_family.jpg" alt="A family of Sims smiling in front of their house">
+        <figcaption>A family of Sims enjoying life together in their cozy home.</figcaption>
+      </figure>
+      <em>AI Prompt: “A cheerful digital family from The Sims 4 standing in front of a pastel suburban house, photorealistic style.”</em>
+    </section>
+
+    <!-- WHO Section -->
+    <section id="who">
+      <h2>Who Plays and Creates?</h2>
+      <p>The Sims community is made up of storytellers, builders, and players of all ages. Some design beautiful houses, while others create dramatic stories or realistic life simulations.</p>
+
+      <figure>
+        <img src="images/sims_build.jpg" alt="Player designing a modern Sims home in build mode">
+        <figcaption>Players use build mode to create dream homes with endless customization.</figcaption>
+      </figure>
+      <em>AI Prompt: “A player designing a modern digital home in The Sims 4 build mode, cozy lighting, detailed interface.”</em>
+
+      <p>There’s a large online modding community too, constantly sharing custom content that adds creativity and realism to the game.</p>
+    </section>
+
+    <!-- WHEN Section -->
+    <section id="when">
+      <h2>When to Play</h2>
+      <p>The Sims 4 can be enjoyed year-round, but it’s especially fun during cozy evenings or rainy days when you want to relax and create freely.</p>
+
+      <table>
+        <tr><th>Season</th><th>Popular Activities</th></tr>
+        <tr><td>Spring</td><td>Gardening and festivals</td></tr>
+        <tr><td>Summer</td><td>Pool parties and vacations</td></tr>
+        <tr><td>Winter</td><td>Holiday events and cozy family gameplay</td></tr>
+      </table>
+
+      <figure>
+        <img src="images/sims_calendar.jpg" alt="In-game seasonal calendar with colorful icons">
+        <figcaption>The Sims 4’s seasonal calendar adds realism and structure to gameplay.</figcaption>
+      </figure>
+      <em>AI Prompt: “A colorful digital in-game calendar from The Sims 4 showing seasons and events, vibrant UI.”</em>
+    </section>
+
+    <!-- WHERE Section -->
+    <section id="where">
+      <h2>Where to Build and Explore</h2>
+      <p>From suburban Willow Creek to the city skyline of San Myshuno, each world offers unique styles and stories to explore.</p>
+
+      <figure>
+        <img src="images/sims_map.jpg" alt="Map view of The Sims 4 neighborhood with houses and trees">
+        <figcaption>Each world in The Sims 4 provides a new environment for creativity.</figcaption>
+      </figure>
+      <em>AI Prompt: “A colorful top-down digital map of a suburban Sims 4 neighborhood with lakes and houses.”</em>
+
+      <p>Players can move their Sims to different towns, travel to community lots, or visit friends’ creations shared in the online gallery.</p>
+    </section>
+
+    <!-- HOW Section -->
+    <section id="how">
+      <h2>How to Play</h2>
+      <p>You start by creating Sims in Create-A-Sim, designing their looks, personalities, and aspirations. Then you build homes, manage careers, and guide their lives through various stories.</p>
+
+      <figure>
+        <img src="images/sims_buildmode.jpg" alt="The Sims 4 build mode interface with furniture and design tools">
+        <figcaption>Build Mode gives you tools to design every room, piece by piece.</figcaption>
+      </figure>
+      <em>AI Prompt: “A screenshot-style digital artwork showing The Sims 4 build mode interface with furniture and house layout.”</em>
+
+      <p>Players can also experiment with mods, cheats, and challenges to add fun twists to the gameplay.</p>
+    </section>
+
+    <!-- WHY Section -->
+    <section id="why">
+      <h2>Why People Love It</h2>
+      <p>The Sims 4 allows endless creativity — you can be a storyteller, architect, or life simulator. It’s relaxing, expressive, and gives players total control over their imagination.</p>
+
+      <figure>
+        <img src="images/sims_emotions.jpg" alt="Sim characters showing different emotions like happiness and surprise">
+        <figcaption>Emotions make Sims feel alive and relatable.</figcaption>
+      </figure>
+      <em>AI Prompt: “Digital characters from The Sims 4 showing a range of emotions in a bright environment.”</em>
+
+      <p>It’s also a comforting escape for many players, offering a peaceful world they can shape however they want.</p>
+    </section>
+
+    <!-- AI PROMPTS Section -->
+    <section id="ai">
+      <h2>AI Prompts Used</h2>
+      <p>Model: ChatGPT (GPT-5) + DALL·E for AI-generated images</p>
+      <ul style="text-align:left; display:inline-block;">
+        <li>“A cheerful digital family from The Sims 4 standing in front of a pastel suburban house.”</li>
+        <li>“A player designing a modern digital home in The Sims 4 build mode.”</li>
+        <li>“A colorful in-game calendar from The Sims 4 showing events.”</li>
+        <li>“A top-down digital map of a Sims 4 neighborhood.”</li>
+        <li>“The Sims 4 build mode interface with house layout tools.”</li>
+        <li>“Digital Sims characters showing different emotions.”</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ✅ FOOTER -->
+  <footer>
+    <p>Designed by <a href="https://webpages.charlotte.edu/YOURID/itis3135/designfirm/">Caroline Web Creations</a></p>
+    <a href="https://validator.w3.org/check?uri=referer"><img src="images/html-validator.png" alt="HTML Validator"></a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="images/css-validator.png" alt="CSS Validator"></a>
+    <a href="https://wave.webaim.org/report#/"><img src="images/accessibility-validator.png" alt="Accessibility Validator"></a>
+  </footer>
+
+  <!-- ✅ JAVASCRIPT (goes at bottom of body) -->
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll("section");
+      sections.forEach(section => section.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+    }
+  </script>
+</body>
+</html>
