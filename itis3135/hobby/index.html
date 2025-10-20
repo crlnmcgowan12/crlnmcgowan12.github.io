@@ -21,11 +21,12 @@
       border-radius: 0 0 15px 15px;
     }
 
-    header h1 {
-      color: #4c6a69;
-      font-size: 2.2em;
-      margin-bottom: 10px;
-    }
+   h1 {
+  color: #4c6a69;
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
 
     nav a {
       color: #4c6a69;
@@ -239,7 +240,7 @@
   <script>
     function showSection(id) {
       const sections = document.querySelectorAll("section");
-      sections.forEach(section => section.classList.remove("active"));
+     sections.forEach((section) => section.classList.remove("active"));
       document.getElementById(id).classList.add("active");
     }
   </script>
