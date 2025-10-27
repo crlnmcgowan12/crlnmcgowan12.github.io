@@ -5,6 +5,36 @@
   <title>Caroline McGowan | ITIS 3135 | Introduction Form</title>
   <link rel="stylesheet" href="styles/default.css">
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+  <style>
+  
+    .form-buttons {
+      display: flex;
+      justify-content: center; 
+      gap: 1rem; 
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .form-buttons button {
+      padding: 0.5rem 1.2rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #00703C; 
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .form-buttons button:hover {
+      background-color: #005b30;
+    }
+
+    main {
+      margin-bottom: 6rem; 
+    }
+  </style>
 </head>
 
 <body>
@@ -16,70 +46,98 @@
     <h3>Please submit the form below.</h3>
 
     <form id="introForm">
+      
       <fieldset>
         <legend>Basic Information</legend>
-        <label>First Name: <input type="text" name="firstName" value="Caroline" required></label><br>
-        <label>Middle Name/Initial: <input type="text" name="middleName" placeholder="Optional"></label><br>
-        <label>Preferred Name: <input type="text" name="nickname" placeholder="Optional"></label><br>
-        <label>Last Name: <input type="text" name="lastName" value="McGowan" required></label><br>
+        <label>First Name: 
+          <input type="text" name="firstName" value="Caroline" required>
+        </label><br>
+        <label>Middle Name/Initial: 
+          <input type="text" name="middleName" placeholder="Optional">
+        </label><br>
+        <label>Preferred Name: 
+          <input type="text" name="nickname" placeholder="Optional">
+        </label><br>
+        <label>Last Name: 
+          <input type="text" name="lastName" value="McGowan" required>
+        </label><br>
       </fieldset>
 
+    
       <fieldset>
-        <legend>Fun Info</legend>
+        <legend>Mascot Information</legend>
         <label>Acknowledgement Statement: 
           <input type="text" name="acknowledge" value="Learning web development, one line of code at a time." required>
         </label><br>
-        <label>Acknowledgement Date: <input type="date" name="ackDate" required></label><br>
-        <label>Mascot Adjective: <input type="text" name="mascotAdj" placeholder="Clever" required></label><br>
-        <label>Mascot Animal: <input type="text" name="mascotAnimal" placeholder="Bear" required></label><br>
-        <label>Divider: <input type="text" name="divider" value="~" required></label><br>
+        <label>Acknowledgement Date: 
+          <input type="date" name="ackDate" required pattern="\d{4}-\d{2}-\d{2}" placeholder="YYYY-MM-DD">
+        </label><br>
+        <label>Mascot Adjective: 
+          <input type="text" name="mascotAdj" value="Clever" required>
+        </label><br>
+        <label>Mascot Animal: 
+          <input type="text" name="mascotAnimal" value="Monkey" required>
+        </label><br>
+        <label>Divider: 
+          <input type="text" name="divider" value="~" required>
+        </label><br>
       </fieldset>
 
       <fieldset>
         <legend>Image & Caption</legend>
-        <label>Upload Image: <input type="file" name="picture" accept="image/*"></label><br>
+        <label>Upload Image: 
+          <input type="file" name="picture" accept="image/*">
+        </label><br>
         <label>Picture Caption: 
           <input type="text" name="picCaption" value="A photo of Caroline McGowan" required>
         </label><br>
       </fieldset>
 
+    
       <fieldset>
         <legend>Personal Details</legend>
-        <label>Personal Background: 
+        <label>Personal Background:<br>
           <textarea name="personalBackground" required>I am a student at UNCC, from PA, born in Maine though, and lived in NC for a bit during childhood, which is why I wanted to come back here for school.</textarea>
         </label><br>
-        <label>Professional Background: 
+        <label>Professional Background:<br>
           <textarea name="professionalBackground" required>I interned at Verizon this summer in Network Automation.</textarea>
         </label><br>
-        <label>Academic Background: 
+        <label>Academic Background:<br>
           <textarea name="academicBackground" required>I am a senior in computer science, with a systems and networks concentration.</textarea>
         </label><br>
-        <label>Background in this Course: 
+        <label>Background in this Course:<br>
           <textarea name="courseBackground" required>This is my first time taking a web development course.</textarea>
         </label><br>
-        <label>Primary Computer Platform: 
+        <label>Primary Computer Platform:<br>
           <textarea name="platform" required>I use an old Macbook</textarea>
         </label><br>
       </fieldset>
+
 
       <fieldset id="coursesSection">
         <legend>Courses I'm Taking</legend>
         <div class="course">
           <label>Department: <input type="text" name="dept" value="ITIS" required></label>
           <label>Number: <input type="text" name="number" value="3135" required></label>
-          <label>Name: <input type="text" name="courseName" placeholder="Web App Design" required></label>
-          <label>Reason: <input type="text" name="reason" placeholder="Required / Interested" required></label>
+          <label>Name: <input type="text" name="courseName" value="Web App Design" required></label>
+          <label>Reason: <input type="text" name="reason" value="Required / Interested" required></label>
           <button type="button" class="removeCourse">Remove</button>
         </div>
         <button type="button" id="addCourse">Add Course</button>
       </fieldset>
 
+
       <fieldset>
         <legend>Extras</legend>
-        <label>Funny Thing: <textarea name="funnyThing">I once fainted due to the stress of a calc exam</textarea></label><br>
-        <label>Something Else to Share: <textarea name="share">I'm looking forward to learning a lot in this course.</textarea></label><br>
+        <label>Funny Thing:<br>
+          <textarea name="funnyThing">I once fainted due to the stress of a calc exam</textarea>
+        </label><br>
+        <label>Something Else to Share:<br>
+          <textarea name="share">I'm looking forward to learning a lot in this course.</textarea>
+        </label><br>
       </fieldset>
 
+    
       <fieldset>
         <legend>Links</legend>
         <label>Link 1: <input type="url" name="link1" placeholder="LinkedIn URL"></label><br>
@@ -89,9 +147,12 @@
         <label>Link 5: <input type="url" name="link5"></label><br>
       </fieldset>
 
-      <button type="submit">Submit</button>
-      <button type="reset">Reset</button>
-      <button type="button" id="clearButton">Clear</button>
+   
+      <div class="form-buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" id="clearButton">Clear</button>
+      </div>
     </form>
   </main>
 
