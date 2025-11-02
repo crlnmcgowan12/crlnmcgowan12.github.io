@@ -2,10 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("introForm");
     const generateBtn = document.getElementById("generateHTML");
 
-    generateBtn.addEventListener("click", () => {
+    generateBtn.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent default behavior
+
         const formData = new FormData(form);
 
-   
+        // Start building HTML output
         let htmlOutput = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,10 +30,15 @@ document.addEventListener("DOMContentLoaded", () => {
     <h3>Courses</h3>
     <ul>`;
 
-        // Collect multiple courses
+        // Handle multiple courses
         const courses = document.querySelectorAll("#coursesSection .course");
-        courses.forEach(course => {
-            htmlOutput += `<li>${course.querySelector('input[name="dept"]').value} ${course.querySelector('input[name="number"]').value}: ${course.querySelector('input[name="courseName"]').value} - ${course.querySelector('input[name="reason"]').value}</li>`;
+        courses.forEach((course) => {
+            const dept = course.querySelector('input[name="dept"]').value;
+            const number = course.querySelector('input[name="number"]').value;
+            const name = course.querySelector('input[name="courseName"]').value;
+            const reason = course.querySelector('input[name="reason"]').value;
+
+            htmlOutput += `<li>${dept} ${number}: ${name} - ${reason}</li>`;
         });
 
         htmlOutput += `</ul>
@@ -40,10 +47,12 @@ document.addEventListener("DOMContentLoaded", () => {
     <p>${formData.get("share")}</p>
     <h3>Links</h3>
     <ul>`;
-        
+
+        // Handle links
         for (let i = 1; i <= 5; i++) {
-            if (formData.get(`link${i}`)) {
-                htmlOutput += `<li><a href="${formData.get(`link${i}`)}">${formData.get(`link${i}`)}</a></li>`;
+            const link = formData.get(`link${i}`);
+            if (link) {
+                htmlOutput += `<li><a href="${link}">${link}</a></li>`;
             }
         }
 
@@ -51,11 +60,12 @@ document.addEventListener("DOMContentLoaded", () => {
 </body>
 </html>`;
 
-    
+        // Replace the form with the HTML code block
         const main = form.parentElement;
         main.innerHTML = `<h2>Introduction HTML</h2>
 <pre><code class="html">${htmlOutput.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</code></pre>`;
 
+        // Apply Highlight.js syntax highlighting
         hljs.highlightAll();
     });
 });
