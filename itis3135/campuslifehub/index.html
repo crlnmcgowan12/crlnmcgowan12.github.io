@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Campus Life Hub | Home</title>
-           <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+    <!-- CSS is in the SAME folder -->
+<link rel="stylesheet" href="default.css">
+
 </head>
 <body>
 
-<!-- Include the header with navigation bar -->
+<!-- Include the header -->
 <div data-include="header.html"></div>
 
 <main>
@@ -16,23 +19,30 @@
     <p>This website helps UNCC students discover events, resources, and tips for student life.</p>
 
     <h3>Featured Events</h3>
+
+    <!-- Images are ALSO in the SAME folder -->
+  <div class="slides-container">
     <div class="slide"><img src="images/event1.jpg" alt="Event 1"></div>
-    <div class="slide"><img src="images/event2.jpg" alt="Event 2"></div>
-    <div class="slide"><img src="images/event3.jpg" alt="Event 3"></div>
+    <div class="slide"><img src="images/event2.jpeg" alt="Event 2"></div>
+    <div class="slide"><img src="images/event3.jpeg" alt="Event 3"></div>
+</div>
+
 
     <h3>Quick Links</h3>
     <ul>
         <li><a href="events.html">Upcoming Events</a></li>
         <li><a href="resources.html">Campus Resources</a></li>
         <li><a href="about.html">About Sankalp</a></li>
-        <li><a href="contact.html">Contact</a></li> <!-- added missing link -->
+        <li><a href="contact.html">Contact</a></li>
     </ul>
 </main>
 
 <!-- Include the footer -->
 <div data-include="footer.html"></div>
 
-<script src="scripts/HTMLInclude.js"></script>
-<script src="scripts/script.js"></script>
+
+<script src="HTMLInclude.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>

@@ -1,52 +1,101 @@
+/* General page styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f4f4f4;
+    font-family: Arial, sans-serif; /* clean, readable font */
+    margin: 0; /* remove default browser margin */
+    background: #f4f4f4; /* light gray background for the page */
 }
 
-header {
-    background: #004b8d;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-nav {
-    background: #022f52;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 10px;
+/* Container for slides to align them horizontally and center them */
+.slides-container {
     display: flex;
+    gap: 20px;           /* space between slides */
     justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap;     /* wrap on small screens */
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main {
-    padding: 20px;
-    background: white;
-    max-width: 900px;
-    margin: 20px auto;
-    border-radius: 8px;
-}
-
-footer {
-    background: #004b8d;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    margin-top: 40px;
+/* Individual slide styling */
+.slide {
+    max-width: 300px;    /* limit slide width */
 }
 
 .slide img {
-    width: 100%;
-    border-radius: 8px;
+    width: 100%;         /* fill container width */
+    height: 180px;       /* consistent height for all slides */
+    object-fit: cover;   /* crop nicely without stretching */
+    border-radius: 8px;  /* rounded corners to match main content */
+    display: block;      /* remove inline spacing */
+    margin-bottom: 10px; /* optional spacing below image */
+}
+
+/* Header styling */
+header {
+    background: #004b8d; /* dark blue header */
+    color: white; /* white text */
+    padding: 20px; /* space inside the header */
+    text-align: center; /* center the text */
+}
+
+/* Navigation bar styling */
+nav {
+    background: #022f52; /* slightly darker blue for nav */
+}
+
+nav ul {
+    list-style: none; /* remove bullets */
+    margin: 0;
+    padding: 10px; /* some space inside nav */
+    display: flex; /* horizontal layout */
+    justify-content: center; /* center nav items */
+    gap: 20px; /* space between links */
+}
+
+nav a {
+    color: white; /* link color */
+    text-decoration: none; /* remove underline */
+    font-weight: bold; /* make links stand out */
+}
+
+/* Main content area */
+main {
+    padding: 20px; /* inner spacing */
+    background: white; /* white box for readability */
+    max-width: 900px; /* keep content from stretching too wide */
+    margin: 20px auto; /* center main content with vertical spacing */
+    border-radius: 8px; /* slightly rounded corners */
+}
+
+/* Footer styling */
+footer {
+    background: #004b8d; /* match header */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px; /* space above footer */
+}
+
+/* About page photo styling */
+.about-photo-section {
+    text-align: center; /* center the photo */
+    margin: 20px 0; /* space above and below */
+}
+
+/* Profile photo styling */
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover; /* crop image nicely inside circle */
+    border-radius: 50%; /* make it circular */
+    border: 4px solid #b27092; /* rose-colored border */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* subtle shadow */
+    box-sizing: border-box; /* include border in width/height */
+}
+
+/* Make all event images uniform */
+.event-image {
+    width: 300px;       /* fixed width for consistency */
+    height: 180px;      /* fixed height to match layout */
+    object-fit: cover;  /* crop images nicely without stretching */
+    border-radius: 8px; /* optional: rounded corners to match style */
+    display: block;     /* remove inline spacing */
+    margin-bottom: 10px; /* spacing below image */
 }

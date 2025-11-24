@@ -3,37 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Campus Life Hub | Events</title>
-           <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/default.css">
+    <!-- Linting script to catch HTML issues -->
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <!-- Link to main CSS -->
+    <link rel="stylesheet" href="default.css">
 </head>
 <body>
 
+<!-- Include site header -->
 <div data-include="header.html"></div>
 
 <main>
+    <!-- Page heading -->
     <h2>Upcoming Campus Events</h2>
 
-    <div>
+    <!-- Event 1 -->
+    <div class="event">
+
+        <img src="images/event1.jpg" alt="Java Basics Workshop" class="event-image">
         <h3>Java Basics Workshop</h3>
         <p>Date: Nov 15, 2025 | Location: CS Lab</p>
         <p>Learn Java programming fundamentals in a hands-on 2-hour workshop.</p>
     </div>
 
-    <div>
+    <!-- Event 2 -->
+    <div class="event">
+
+        <img src="images/event2.jpeg" alt="Photography Club Meetup" class="event-image">
         <h3>Photography Club Meetup</h3>
         <p>Date: Nov 20, 2025 | Location: Campus Garden</p>
         <p>Join the Photography Club for a campus photoshoot and social networking.</p>
     </div>
 
-    <div>
+    <!-- Event 3 -->
+    <div class="event">
+
+        <img src="images/event3.jpeg" alt="Volunteer Day" class="event-image">
         <h3>Volunteer Day</h3>
         <p>Date: Dec 1, 2025 | Location: Local Community Center</p>
         <p>Participate in community service activities organized by UNCC volunteers.</p>
     </div>
 </main>
 
+<!-- Include site footer -->
 <div data-include="footer.html"></div>
 
-<script src="scripts/HTMLInclude.js"></script>
+<!-- Scripts for HTML includes and other functionality -->
+<script src="HTMLInclude.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
