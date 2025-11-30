@@ -99,3 +99,15 @@ footer {
     display: block;     /* remove inline spacing */
     margin-bottom: 10px; /* spacing below image */
 }
+/* Accordion Functionality */
+.accordion-panel { 
+    display: none; 
+}
+
+.accordion-header { 
+    cursor: pointer; 
+}
+
+.accordion-header.active { 
+    color: #0066cc; 
+}
