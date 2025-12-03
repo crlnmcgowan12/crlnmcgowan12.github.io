@@ -108,6 +108,6 @@ footer {
     cursor: pointer; 
 }
 
-.accordion-header.active { 
-    color: #0066cc; 
+.active-header {
+    color: #0066cc;
 }
